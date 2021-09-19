@@ -33,6 +33,7 @@ ax.set_ylabel("square of the value ", fontsize=14)  # y axis value
 ax.axis([0,50,0,5000])                                #take tuple or list [x_start, x_finish, y_start , y_finsh]
 
 #set size of tick label 
+
 ax.tick_params(axis="both",labelsize=10)
 # ax.plot(value,squares,linewidth=3)                  #[x, y] linewidth make the graph line more thik 
 ax.scatter(value, squares,c="red", s=50)              #[x, y] s make the graph dot point more thik  c = color (tuple or string )
