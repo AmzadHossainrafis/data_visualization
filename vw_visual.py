@@ -15,5 +15,6 @@ ax.set_ylabel("square of the value ", fontsize=14)  # y axis value
 
 plt.scatter(rw.x_value,rw.y_value, c='red',s=5)
 plt.show()
+
 #plt.savefig('image of example/ example9(rw).png',bbox_inches="tight")
 
