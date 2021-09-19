@@ -12,10 +12,14 @@ for i in range(100):
     result.append(x)
 
 frquency=[]
-
+#analyse the result 
 for x in range(1,die.side+1):
     c=result.count(x)
     frquency.append(c)
 
-print(frquency)
-
+x_value= list(range(1,die.side+1))
+data=[Bar(x=x_value,y=frquency)]
+x_config= {"title": "result"}
+y_config= {"title": "frequecy"}
+my_layout= Layout(title="result of the rolling die ",xaxis=x_config,yaxis=y_config)
+offline.plot({'data': data,'layout':my_layout},filename='d6.html')
