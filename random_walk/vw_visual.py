@@ -23,7 +23,8 @@ while True:
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 
-    plt.show()
+    # plt.show()
+    plt.savefig('example10c.png',bbox_inches="tight")
     break
 
 
@@ -31,5 +32,4 @@ while True:
     # if keep == "n":
     #     break
     # 
-    # plt.savefig('image of example/example10.PNG',bbox_inches="tight")
 
