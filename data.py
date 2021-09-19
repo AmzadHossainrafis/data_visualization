@@ -11,7 +11,7 @@ email : amzad.rafi@northosouth.edu
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-# from random_walk import Randomwalk
+from random_walk import Randomwalk
 #set style 
 plt.style.use('seaborn')
 
