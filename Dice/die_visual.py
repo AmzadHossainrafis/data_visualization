@@ -5,15 +5,18 @@ from plotly import offline
 #creat a object 
 
 die=Die(6)
+die_2=Die(6)
 #list to carry random die side  value
 result=[]
-for i in range(100):
+for i in range(1000):
     x=die.roll() #roll the die to create to outcome 
-    result.append(x)
+    y=die_2.roll()
+    res =x+y
+    result.append(res)
 
 frquency=[]
 #analyse the result 
-for x in range(1,die.side+1):
+for x in range(1,2*(die.side)+1):
     c=result.count(x)
     frquency.append(c)
 
