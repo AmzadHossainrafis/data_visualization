@@ -34,7 +34,7 @@ with open(file_name) as f:
         value=int(row[5])
         result.append(value)
         date.append(tdate)
-    # print(result)
+    # print(result) and plt it 
     ax.plot(date,result,c="red")
     ax.tick_params(axis="both",which="major",labelsize=14)
     plt.show()
