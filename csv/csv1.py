@@ -28,14 +28,18 @@ with open(file_name) as f:
     #     print(index,col)
     result = []
     date=[]
+    low=[]
     # tem with date 
     for row in reader:
         tdate=datetime.strptime(row[2],'%Y-%m-%d')
         value=int(row[5])
+        value_low=int(row[6])
         result.append(value)
         date.append(tdate)
+        low.append(value_low)
     # print(result) and plt it 
     ax.plot(date,result,c="red")
+    ax.plot(date,low,c="green")
     ax.tick_params(axis="both",which="major",labelsize=14)
     plt.show()
     # plt.savefig("image/result1.png")
